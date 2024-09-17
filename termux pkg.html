@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <title>NG/termux pkg</title>
+    <link href="jquery-ui/jquery-ui.css" rel="stylesheet">
+    <link rel="icon" href="img/inco.png">
+    <script src="jquery-ui/external/jquery/jquery.js"></script>
+    <script src="jquery-ui/jquery-ui.js"></script>
+    
+    <style>
+      .termuxA{
+        background-image: url('img/Hack.jpg');
+        width: 400px;
+        height: 250px;
+      }
+      h2{
+        font-size: 10px;
+        color: #ff0000;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="termuxA">
+      <h2>HOW TO USE TERMUX</h2>
+    </div><br>
+    
+    <img src="img/termux.png">
+    <h3 id="ty">TERMUX useing</h3>
+    <p>termux තුල බවිත වන ප්‍රෙදන පරිඝනක භෂා</p>
+    <lu>
+      <li>Python</li>
+      <li>Bash</li>
+      <li>Javascript</li>
+      <li>Ruby</li>
+      <li>C/C++</li>
+    </lu>
+    <p>termux install pkg</p>
+    <textarea rows="5" name="comend" style="width: 280px;">
+      pkg install python -y
+      pkg install python2 -y
+      pkg install nodejs -y
+      pkg install Ruby -y
+    </textarea>
+    <p>Termux තුල පරිඝණක භෂවක් යොදගෙන file ලිවිම හා run කිරිම <br>eg:-</p>
+    <p>nano text.py<br>python text.py</p>
+    <h4>Termux text editer</h4>
+    <img src="img/textediter.jpg" style="width: 200px;">
+    <p>Termux වල text එක ලිවිමෙ පසු save කිරිමට  ctrl + x + enter + y + enter යන keys භවිත කරන්න</p>
+    <p>text pakegs list<br>eg:-<br>pkg list-all<br>install pkages<br>eg:-<br>pkg list-installd</p>
+    <p>Termux තුල ෆයිල් වලට අවසර ලබදිය යුතුය.</p>
+    <p>Termux වලින් අපට් බොහො දෙ කලග්ත හැක</p>
+    <img src="img/kali.jpg">
+    <script type="text/javascript">
+      function msg(){
+        setTimeout(
+          function(){
+            alert("!! welcome !!");
+          },8000);
+      }
+      msg()
+      $(function topic(){
+        $("h2").animate({
+          fontSize: "30px"
+        }, 250, function(){
+          var cl = 0;
+          if(cl == 0){
+            $("h2").animate({
+              color: "#33ff33"
+            }, 300)
+            cl = cl + 1;
+          }
+          if(cl == 1){
+            $("h2").animate({
+              color: "#ff0000"
+            }, 300)
+            cl = cl - 1;
+          }
+        }
+        )
+      });
+      
+    </script>
+  </body>
+  
+</html>
